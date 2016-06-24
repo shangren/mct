@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.Map;
+import java.util.Stack;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
@@ -34,6 +35,70 @@ public class ConnectionHolder {
 	 * 静态初始化本地资源
 	 */
 	private static final ThreadLocal<ConcurrentMap<DBType, SqlSession>> localSqlSession = new ThreadLocal<ConcurrentMap<DBType, SqlSession>>();
+
+	/**
+	 * 代理的方法调用栈
+	 */
+	private static final ThreadLocal<Stack<String>> localMethodStack = new ThreadLocal<Stack<String>>();
+	
+	
+	public static class ProxyMethodHolder{
+		
+		
+		/**
+		 * 获取该线程的方法栈
+		 * @return
+		 */
+		public static Stack<String> get(){
+			return localMethodStack.get();
+		}
+		
+		
+		/**
+		 * 像方法栈中push调用的方法
+		 * @param methodName
+		 */
+		public static void push(String methodName){
+			Stack<String> s = localMethodStack.get();
+			if(s == null){
+				s = new Stack<String>();
+			}
+			s.push(methodName);
+			localMethodStack.set(s);
+		}
+		
+		/**
+		 * 从栈中弹出 方法名
+		 * @return
+		 */
+		public static String pop(){
+			Stack<String> s = localMethodStack.get();
+			if(s == null){
+				return null;
+			}
+			return s.pop();
+		}
+		
+		/**
+		 * 方法栈是否为空
+		 * @return
+		 */
+		public static boolean isEmpty(){
+			Stack<String> s = localMethodStack.get();
+			if(s == null){
+				return true;
+			}
+			return (s.size() > 0); 
+		}
+		
+		
+		/**
+		 * 移除线程栈
+		 */
+		public static void remove(){
+			localMethodStack.remove();
+		}
+	}
 	
 	static{
 		Reader mybatisConfigReader;
@@ -104,6 +169,7 @@ public class ConnectionHolder {
 				entry.getValue().close();
 			}
 			localSqlSession.remove();
+			localMethodStack.remove();
 		}
 	}
 
@@ -112,6 +178,8 @@ public class ConnectionHolder {
 	 * 提交
 	 */
 	public static  void commit(){
+		
+		
 		Map<DBType, SqlSession> m = localSqlSession.get();
 		if(!MyUtils.isEmpty(m)){
 			for(Map.Entry<DBType, SqlSession> entry : m.entrySet()){
@@ -133,7 +201,7 @@ public class ConnectionHolder {
 		}
 	}
 
-
+	
 	/**
 	 * 
 	 * @author yangchao.wang
