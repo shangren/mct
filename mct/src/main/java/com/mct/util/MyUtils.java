@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.session.SqlSession;
+
 /**
  * 
  * @author yangchao.wang
@@ -30,6 +32,20 @@ public class MyUtils {
 	 */
 	public static <T>  List<T> newArrayList(){
 		return new ArrayList<T>();
+	}
+
+	/**
+	 * 判断空 or null
+	 * @param obj
+	 * @return
+	 */
+	public static boolean isEmpty(Object... obj) {
+		for(Object o : obj){
+			if(null == o || o.toString().trim().equals("")){
+				return true;
+			}
+		}
+		return false;
 	}
 	
 }
