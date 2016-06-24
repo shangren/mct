@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mct.controller.base.BaseController;
+import com.mct.service.UserService;
+import com.mct.service.base.ServiceFactory;
 
 /**
  * 
@@ -24,6 +26,8 @@ import com.mct.controller.base.BaseController;
 @RequestMapping("/user")
 public class UserController extends BaseController{
 
+	private UserService userService = ServiceFactory.getInstance(UserService.class);
+	
 	/**
 	 * 用户注册
 	 * @param request
@@ -33,7 +37,7 @@ public class UserController extends BaseController{
 	@RequestMapping("/reg")
 	@ResponseBody
 	public Map<String, Object> registUser(HttpServletRequest request, ModelMap model){
-		
+		userService.add(model);
 		return null;
 	}
 	

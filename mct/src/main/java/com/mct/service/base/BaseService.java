@@ -1,56 +1,25 @@
 package com.mct.service.base;
 
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
+import org.apache.ibatis.session.SqlSession;
 
-import net.sf.cglib.proxy.CallbackFilter;
-import net.sf.cglib.proxy.Enhancer;
+import com.mct.dao.base.ConnectionHolder;
 
-/**
- * 
- * @author yangchao.wang
- *
- * @email  yangchao.wang@flaginfo.com.cn
- * @Desc  
- * 
- * @time 2016年6月24日上午11:24:25
- */
 public class BaseService {
 
-private static Map<String,Object> beanMap = new HashMap<String,Object>();
-	
-	public static <T> T getInstance(Class<?> beanClazz){
-		 T t = (T)beanMap.get(beanClazz.getName());
-		 if(t==null){
-			 Enhancer en = new Enhancer();
-			 en.setSuperclass(beanClazz);
-			 en.setCallback(new ServiceInterceptor()); //DBTransactionInterceptor
-			 en.setCallbackFilter(new CallbackFilter() {
-				@Override
-				public int accept(Method arg0) {
-					return 0;
-				}
-			});
-			 t = (T)en.create();
-			 beanMap.put(beanClazz.getName(),t);
-		 }
-		 return t;
-	}
-	
-	
 	/**
-	 * className去实例化对象
-	 * @param clazzName
+	 * 获取sqlSession
 	 * @return
 	 */
-	public static <T> T getInstance(String clazzName){
-		try {
-			return getInstance(Class.forName(clazzName));
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-		return null;
+	public SqlSession getSqlSession(){
+		return ConnectionHolder.getSqlSession(ConnectionHolder.DBType.MYSQL);
 	}
 	
+	/**
+	 * 获取sqlMapper
+	 * @param clazz
+	 * @return
+	 */
+	public <T> T getMapper(Class<T> clazz){
+		return getSqlSession().getMapper(clazz);
+	}
 }
