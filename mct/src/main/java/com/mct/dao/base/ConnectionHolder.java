@@ -22,7 +22,7 @@ import com.mct.util.MyUtils;
  * 数据库操作基类
  * @time 2016年6月24日上午9:01:25
  */
-public class BaseDao {
+public class ConnectionHolder {
 
 	
 	/**
@@ -55,7 +55,7 @@ public class BaseDao {
 	 * @param type
 	 * @return
 	 */
-	public SqlSession getSqlSession(DBType type){
+	public static  SqlSession getSqlSession(DBType type){
 		
 			return getSqlSession(type, true);
 	}
@@ -72,7 +72,7 @@ public class BaseDao {
 	 * @return
 	 */
 	@SuppressWarnings("resource")
-	public SqlSession getSqlSession(DBType type, boolean autoCommit) {
+	public static  SqlSession getSqlSession(DBType type, boolean autoCommit) {
 		SqlSession sqlSession = localSqlSession.get() == null ? null : localSqlSession.get().get(type);
 		if(MyUtils.isEmpty(sqlSession)){
 			SqlSessionFactory sqlSessionFactory = sqlSessionFactoryMap.get(type);
@@ -97,7 +97,7 @@ public class BaseDao {
 	/**
 	 * 关闭当前线程的数据库链接
 	 */
-	public void closeAndRemove(){
+	public static void closeAndRemove(){
 		Map<DBType, SqlSession> m = localSqlSession.get();
 		if(!MyUtils.isEmpty(m)){
 			for(Map.Entry<DBType, SqlSession> entry : m.entrySet()){
@@ -107,7 +107,31 @@ public class BaseDao {
 		}
 	}
 
+	
+	/**
+	 * 提交
+	 */
+	public static  void commit(){
+		Map<DBType, SqlSession> m = localSqlSession.get();
+		if(!MyUtils.isEmpty(m)){
+			for(Map.Entry<DBType, SqlSession> entry : m.entrySet()){
+				entry.getValue().commit();
+			}
+		}
+	}
 
+	
+	/**
+	 * rollback
+	 */
+	public static  void rollback(){
+		Map<DBType, SqlSession> m = localSqlSession.get();
+		if(!MyUtils.isEmpty(m)){
+			for(Map.Entry<DBType, SqlSession> entry : m.entrySet()){
+				entry.getValue().rollback(true);
+			}
+		}
+	}
 
 
 	/**
