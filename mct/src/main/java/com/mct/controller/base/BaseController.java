@@ -1,6 +1,9 @@
 package com.mct.controller.base;
 
+import java.util.Enumeration;
 import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
 
 import com.mct.util.MyUtils;
 
@@ -27,6 +30,18 @@ public class BaseController {
 	public Map<String, Object> getSuccView(){
 		Map<String, Object> result = MyUtils.newMap();
 		result.put("returnCode",SUCC_RETURN_CODE);
+		return result;
+	}
+	
+	public Map<String, ?> bindParam2Map(HttpServletRequest request){
+		Map<String, ?>  result = MyUtils.newMap();
+		Enumeration<?> e = request.getAttributeNames();
+		while(e.hasMoreElements()){
+			String key = (String)e.nextElement();
+			String val = request.getParameter(key);
+			result.put(key, value)
+		}
+		
 		return result;
 	}
 	

@@ -90,6 +90,12 @@
     <artifactId>log4j</artifactId>
     <version>1.2.17</version>
 </dependency>
+
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.38</version><!--5.0.7  可使用别名，5.1.6 5.1.8 5.1.18 需额外设置  -->
+	</dependency>
 		
   </dependencies>
   <build>

@@ -27,44 +27,44 @@ public class ServiceInterceptor implements MethodInterceptor {
 			MethodProxy proxy){
 		Object result = null;
 		try{
-			doBefore(proxy, method, args);
-			result = proxy.invoke(obj, args);
-			doAfter(proxy, method, args, result);
+			doBefore(obj, method, args);
+			result = proxy.invokeSuper(obj, args);
+			doAfter(obj, method, args, result);
 		}catch(Throwable e){
 			e.printStackTrace();
-			doThrow(proxy, method, args, e);
+			doThrow(obj, method, args, e);
 		}finally{
-			doFinnally(proxy, method, args);
+			doFinnally(obj, method, args);
 		}
 		return result;
 	}
 
-	private void doFinnally(MethodProxy proxy, Method method, Object[] args) {
+	private void doFinnally(Object obj, Method method, Object[] args) {
 		
 		for(Advice advice : adviceList){
-			advice.doFinnally(proxy, method, args);
+			advice.doFinnally(obj, method, args);
 		}
 	}
 
-	private void doThrow(MethodProxy proxy, Method method, Object[] args,
+	private void doThrow(Object obj, Method method, Object[] args,
 			Throwable e) {
 		for(Advice advice : adviceList){
-			advice.doThrow(proxy, method, args, e);
+			advice.doThrow(obj, method, args, e);
 		}
 		
 	}
 
-	private void doAfter(MethodProxy proxy, Method method, Object[] args,
+	private void doAfter(Object obj, Method method, Object[] args,
 			Object result) {
 		
 		for(Advice advice : adviceList){
-			advice.after(proxy, method, args, result);
+			advice.after(obj, method, args, result);
 		}
 	}
 
-	private void doBefore(MethodProxy proxy, Method method, Object[] args) {
+	private void doBefore(Object obj, Method method, Object[] args) {
 		for(Advice advice : adviceList){
-			advice.before(proxy, method, args);
+			advice.before(obj, method, args);
 		}
 	}
 

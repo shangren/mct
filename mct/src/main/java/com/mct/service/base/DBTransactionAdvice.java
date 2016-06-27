@@ -20,11 +20,15 @@ public class DBTransactionAdvice implements Advice{
 	private static final Logger logger = Logger.getLogger(DBTransactionAdvice.class);
 
 	//before的调用时间
-	private long beginTime = System.currentTimeMillis();
+	private long beginTime = 0L;
 	
 	@Override
 	public void before(Object obj, Method method, Object[] args) {
+		if(ConnectionHolder.ProxyMethodHolder.isEmpty()){
+			beginTime = System.currentTimeMillis();
+		}
 		String methodKey = method.getDeclaringClass().getName() + "@method=" + method.getName();
+		logger.debug("methodKey : " + methodKey);
 		ConnectionHolder.ProxyMethodHolder.push(methodKey);
 	}
 
@@ -43,9 +47,9 @@ public class DBTransactionAdvice implements Advice{
 		String methodKey = ConnectionHolder.ProxyMethodHolder.pop();
 		if(ConnectionHolder.ProxyMethodHolder.isEmpty()){
 			ConnectionHolder.rollback();
-			logger.info("methodKey : " + methodKey + " rollback!");
+			logger.error("methodKey : " + methodKey + " rollback!");
 		}else{
-			logger.info("methodKey : " + methodKey + "throws Excepiton!");
+			logger.error("methodKey : " + methodKey + "throws Excepiton!");
 		}
 	}
 

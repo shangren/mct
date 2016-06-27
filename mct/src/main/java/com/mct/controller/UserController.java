@@ -38,7 +38,7 @@ public class UserController extends BaseController{
 	@ResponseBody
 	public Map<String, Object> registUser(HttpServletRequest request, ModelMap model){
 		userService.add(model);
-		return null;
+		return this.getSuccView();
 	}
 	
 	

@@ -91,7 +91,7 @@ public class ConnectionHolder {
 			if(s == null){
 				return true;
 			}
-			return (s.size() > 0); 
+			return (s.size() < 1); 
 		}
 		
 		
