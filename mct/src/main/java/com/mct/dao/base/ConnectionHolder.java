@@ -1,8 +1,10 @@
 package com.mct.dao.base;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
+import java.net.URL;
 import java.util.Map;
 import java.util.Stack;
 import java.util.concurrent.ConcurrentHashMap;
@@ -11,6 +13,7 @@ import java.util.concurrent.ConcurrentMap;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.log4j.Logger;
 
 import com.mct.util.MyUtils;
 
@@ -25,7 +28,7 @@ import com.mct.util.MyUtils;
  */
 public class ConnectionHolder {
 
-	
+	private static final Logger logger = Logger.getLogger(ConnectionHolder.class);
 	/**
 	 * 静态初始化所有sqlSessionFactory
 	 */
@@ -103,10 +106,11 @@ public class ConnectionHolder {
 	static{
 		Reader mybatisConfigReader;
 		try {
-			mybatisConfigReader = new FileReader("mybatis.xml");
+			String fileName =logger.getClass().getResource("/mybatis-config.xml").getPath();
+			mybatisConfigReader = new FileReader(fileName);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-			throw new RuntimeException("mybatis.xml 文件没有找到!");
+			throw new RuntimeException("mybatis-config.xml 文件没有找到!");
 		}
 		
 		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(mybatisConfigReader,DBType.MYSQL.toString());

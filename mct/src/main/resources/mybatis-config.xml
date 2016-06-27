@@ -3,17 +3,22 @@
 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+	
+	<properties resource="config/jdbc.properties">
+	</properties>
 	<!-- 框架运行行为信息 -->
 	<settings>
 		<setting name="lazyLoadingEnabled" value="false" />
 		<setting name="jdbcTypeForNull" value="NULL" />
 	</settings>
+	
+	
 	<!-- 定义全限定类名的别名，简化配置 -->
 	<typeAliases>
-		<typeAlias alias="QRCodeModel" type="cn.com.flaginfo.dao.model.QRCodeModel" />
+		
 	</typeAliases>
 	
-	<environments default="oracle">
+	<environments default="mysql">
 		<environment id="mysql">
 			<transactionManager type="JDBC">
 				<property name="closeConnection" value="true" />
@@ -29,6 +34,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
   
 	<mappers>
-		<mapper resource="config/mapper/QRCodeMapper.xml" />
+		<mapper resource="com/mct/dao/UserMapper.xml" />
 	</mappers>
 </configuration>
