@@ -13,6 +13,7 @@ import java.util.concurrent.ConcurrentMap;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.ibatis.session.TransactionIsolationLevel;
 import org.apache.log4j.Logger;
 
 import com.mct.util.MyUtils;

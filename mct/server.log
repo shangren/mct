@@ -1,0 +1,62 @@
+[mct][INFO ]2016-06-28 09:46:49,682com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 09:52:43,348com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][ERROR]2016-06-28 09:52:43,797com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=add rollback!
+  [mct][INFO ]2016-06-28 09:52:43,797com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=35 .ms
+  [mct][INFO ]2016-06-28 09:55:17,866com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 09:55:18,432com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 09:55:18,432com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=246 .ms
+  [mct][INFO ]2016-06-28 09:57:59,734com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 09:58:00,286com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 09:58:00,286com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=235 .ms
+  [mct][INFO ]2016-06-28 10:07:21,939com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:07:22,472com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:07:22,472com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=230 .ms
+  [mct][INFO ]2016-06-28 10:11:53,866com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:11:53,896com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:11:53,896com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=30 .ms
+  [mct][INFO ]2016-06-28 10:11:53,941com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:11:53,966com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:11:53,966com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=24 .ms
+  [mct][INFO ]2016-06-28 10:11:54,056com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:11:54,069com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:11:54,070com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=13 .ms
+  [mct][INFO ]2016-06-28 10:11:54,197com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:11:54,215com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:11:54,215com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=18 .ms
+  [mct][INFO ]2016-06-28 10:11:54,315com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:11:54,330com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:11:54,331com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=14 .ms
+  [mct][INFO ]2016-06-28 10:11:54,444com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:11:54,458com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:11:54,458com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=14 .ms
+  [mct][INFO ]2016-06-28 10:11:54,568com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:11:54,589com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:11:54,589com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=21 .ms
+  [mct][INFO ]2016-06-28 10:16:28,054com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:28,054com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:28,467com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:28,664com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:28,689com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:28,725com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:28,749com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:28,760com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=96 .ms
+  [mct][INFO ]2016-06-28 10:16:28,762com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=98 .ms
+  [mct][INFO ]2016-06-28 10:16:28,763com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=99 .ms
+  [mct][INFO ]2016-06-28 10:16:28,774com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:28,775com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:28,779com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=3 .ms
+  [mct][INFO ]2016-06-28 10:16:28,815com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:28,818com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=42 .ms
+  [mct][INFO ]2016-06-28 10:16:55,308com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:55,583com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:55,802com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:55,803com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=219 .ms
+  [mct][INFO ]2016-06-28 10:16:55,809com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:55,812com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=228 .ms
+  [mct][INFO ]2016-06-28 10:16:55,933com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:55,941com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:55,947com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=14 .ms
+  [mct][INFO ]2016-06-28 10:16:56,109com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
+  [mct][INFO ]2016-06-28 10:16:56,114com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][INFO ]2016-06-28 10:16:56,116com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=7 .ms
+  

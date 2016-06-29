@@ -24,7 +24,7 @@ public class UserService extends BaseService{
 	 * @param reqMap
 	 */
 	public void  add(Map<String, ?> reqMap){
-		this.getMapper(UserMapper.class).insert(reqMap);
+		this.getMapper(UserMapper.class, false).insert(reqMap);
 	}
 	
 	

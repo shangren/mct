@@ -4,6 +4,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,8 @@ import com.mct.service.base.ServiceFactory;
 @RequestMapping("/user")
 public class UserController extends BaseController{
 
+	private static final Logger logger = Logger.getLogger(UserController.class);
+	
 	private UserService userService = ServiceFactory.getInstance(UserService.class);
 	
 	/**
@@ -36,8 +39,15 @@ public class UserController extends BaseController{
 	 */
 	@RequestMapping("/reg")
 	@ResponseBody
-	public Map<String, Object> registUser(HttpServletRequest request, ModelMap model){
-		userService.add(model);
+	public Map<String, Object> registUser(HttpServletRequest request){
+		Map<String, Object> reqMap = this.bindParam2Map(request);
+		logger.info("/user/reg; params->" + reqMap);
+		try{
+			userService.add(reqMap);
+		}catch(Exception e){
+			return this.getErrorView();
+		}		
+		
 		return this.getSuccView();
 	}
 	

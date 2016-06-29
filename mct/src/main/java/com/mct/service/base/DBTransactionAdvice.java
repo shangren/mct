@@ -37,7 +37,7 @@ public class DBTransactionAdvice implements Advice{
 		String methodKey = ConnectionHolder.ProxyMethodHolder.pop();
 		if(ConnectionHolder.ProxyMethodHolder.isEmpty()){
 			ConnectionHolder.commit();
-			logger.info("methodKey : "+ methodKey +"is commited!");
+			logger.info("methodKey : "+ methodKey +" commited!");
 		}
 		
 	}

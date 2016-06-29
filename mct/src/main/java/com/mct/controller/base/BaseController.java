@@ -33,13 +33,31 @@ public class BaseController {
 		return result;
 	}
 	
-	public Map<String, ?> bindParam2Map(HttpServletRequest request){
-		Map<String, ?>  result = MyUtils.newMap();
-		Enumeration<?> e = request.getAttributeNames();
+	
+	/**
+	 * 获取成功返回码
+	 * @return
+	 */
+	public Map<String, Object> getErrorView(){
+		Map<String, Object> result = MyUtils.newMap();
+		result.put("returnCode",ERROR_RETURN_CODE);
+		return result;
+	}
+	/**
+	 * 取出request 中的参数转化为map
+	 * @param request
+	 * @return
+	 */
+	public Map<String, Object> bindParam2Map(HttpServletRequest request){
+		Map<String, Object>  result = MyUtils.newMap();
+		Enumeration<?> e = request.getParameterNames();
 		while(e.hasMoreElements()){
 			String key = (String)e.nextElement();
 			String val = request.getParameter(key);
-			result.put(key, value)
+			if(!MyUtils.isEmpty(val)){
+				result.put(key, val);
+			}
+			continue;
 		}
 		
 		return result;

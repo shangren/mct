@@ -21,7 +21,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<environments default="MYSQL">
 		<environment id="MYSQL">
 			<transactionManager type="JDBC">
-				<property name="closeConnection" value="true" />
 			</transactionManager>
 			<dataSource type="POOLED">
 				<property name="driver" value="${driver}" />
@@ -34,6 +33,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
   
 	<mappers>
-		<mapper resource="com/mct/dao/UserMapper.xml" />
+		<!-- <mapper resource="com/mct/dao/UserMapper.xml" /> -->
+		<package name="com.mct.dao"/>
 	</mappers>
 </configuration>
