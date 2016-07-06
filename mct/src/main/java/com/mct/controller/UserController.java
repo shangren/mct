@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mct.controller.base.BaseController;
+import com.mct.model.UserInfoModel;
 import com.mct.service.UserService;
 import com.mct.service.base.ServiceFactory;
 
@@ -42,14 +43,76 @@ public class UserController extends BaseController{
 	public Map<String, Object> registUser(HttpServletRequest request){
 		Map<String, Object> reqMap = this.bindParam2Map(request);
 		logger.info("/user/reg; params->" + reqMap);
+		UserInfoModel userInfoModel = this.popModelWithMap(reqMap, UserInfoModel.class);
 		try{
-			userService.add(reqMap);
+			userService.add(userInfoModel);
 		}catch(Exception e){
 			return this.getErrorView();
 		}		
 		
 		return this.getSuccView();
 	}
+
+	/**
+	 * 查询用户信息
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping("/search")
+	@ResponseBody
+	public Map<String, Object> searchUser(HttpServletRequest request){
+		Map<String, Object> reqMap = this.bindParam2Map(request);
+		logger.info("/user/search; params->" + reqMap);
+		UserInfoModel userInfoModel = this.popModelWithMap(reqMap, UserInfoModel.class);
+		UserInfoModel model = null;
+		try{
+			 model = userService.get(userInfoModel);
+		}catch(Exception e){
+			return this.getErrorView();
+		}
+		return this.getSuccView("data", model);
+	}
 	
 	
+	/**
+	 * 删除用户信息
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping("/delete")
+	@ResponseBody
+	public Map<String, Object> deleteUser(HttpServletRequest request){
+		Map<String, Object> reqMap = this.bindParam2Map(request);
+		logger.info("/user/delete; params->" + reqMap);
+		UserInfoModel userInfoModel = this.popModelWithMap(reqMap, UserInfoModel.class);
+		try{
+			 userService.delete(userInfoModel);
+		}catch(Exception e){
+			return this.getErrorView();
+		}
+		return this.getSuccView();
+	}
+	
+	
+	
+	
+	
+	/**
+	 * 修改用户信息
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping("/modify")
+	@ResponseBody
+	public Map<String, Object> modifyUser(HttpServletRequest request){
+		Map<String, Object> reqMap = this.bindParam2Map(request);
+		logger.info("/user/modify; params->" + reqMap);
+		UserInfoModel userInfoModel = this.popModelWithMap(reqMap, UserInfoModel.class);
+		try{
+			 userService.modify(userInfoModel);
+		}catch(Exception e){
+			return this.getErrorView();
+		}
+		return this.getSuccView();
+	}
 }

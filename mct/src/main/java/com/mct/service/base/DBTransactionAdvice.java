@@ -55,6 +55,7 @@ public class DBTransactionAdvice implements Advice{
 
 	@Override
 	public void doFinnally(Object obj, Method method, Object[] args) {
+		logger.debug("方法 method=" + method.getName() + " cost=" + (System.currentTimeMillis() - beginTime) + " .ms");
 		if(ConnectionHolder.ProxyMethodHolder.isEmpty()){
 			ConnectionHolder.closeAndRemove();
 			logger.info("方法 method=" + method.getName() + " cost=" + (System.currentTimeMillis() - beginTime) + " .ms");

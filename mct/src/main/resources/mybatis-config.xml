@@ -15,7 +15,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	
 	<!-- 定义全限定类名的别名，简化配置 -->
 	<typeAliases>
-		
+		<package name="com.mct.model"/>
 	</typeAliases>
 	
 	<environments default="MYSQL">

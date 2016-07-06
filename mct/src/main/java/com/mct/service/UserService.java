@@ -1,10 +1,7 @@
 package com.mct.service;
 
-import java.util.Map;
-
-import org.apache.ibatis.session.SqlSession;
-
 import com.mct.dao.UserMapper;
+import com.mct.model.UserInfoModel;
 import com.mct.service.base.BaseService;
 
 /**
@@ -23,9 +20,38 @@ public class UserService extends BaseService{
 	 * 新增
 	 * @param reqMap
 	 */
-	public void  add(Map<String, ?> reqMap){
-		this.getMapper(UserMapper.class, false).insert(reqMap);
+	public void  add(UserInfoModel user){
+		this.getMapper(UserMapper.class, false).insert(user);
 	}
+
+	/**
+	 * 查询
+	 * @param userInfoModel
+	 * @return
+	 */
+	public UserInfoModel get(UserInfoModel userInfoModel) {
+		return this.getMapper(UserMapper.class, false).get(userInfoModel);
+	}
+	
+	/**
+	 * 删除
+	 * @param userInfoModel
+	 * @return
+	 */
+	public void delete(UserInfoModel userInfoModel) {
+		this.getMapper(UserMapper.class, false).del(userInfoModel);
+	}
+	
+	
+	/**
+	 * 修改
+	 * @param userInfoModel
+	 * @return
+	 */
+	public void modify(UserInfoModel userInfoModel) {
+		this.getMapper(UserMapper.class, false).update(userInfoModel);
+	}
+	
 	
 	
 }

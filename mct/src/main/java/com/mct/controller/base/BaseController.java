@@ -1,5 +1,7 @@
 package com.mct.controller.base;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.Enumeration;
 import java.util.Map;
 
@@ -34,6 +36,18 @@ public class BaseController {
 	}
 	
 	
+	
+	/**
+	 * 获取成功返回码
+	 * @return
+	 */
+	public Map<String, Object> getSuccView(String key, Object obj){
+		Map<String, Object> rst = this.getSuccView();
+		rst.put(key, obj);
+		return rst;
+	}
+	
+	
 	/**
 	 * 获取成功返回码
 	 * @return
@@ -61,6 +75,32 @@ public class BaseController {
 		}
 		
 		return result;
+	}
+	
+	
+	/**
+	 * 将map 填充到Model中
+	 * @param reqMap
+	 * @param clazz
+	 * @return
+	 */
+	public <T> T popModelWithMap(Map<String, Object> reqMap,
+			Class<T>  clazz) {
+		Field[] fields = clazz.getDeclaredFields();
+		T t = null;
+		try {
+			t = (T) clazz.newInstance();
+			for(Field f : fields){
+				String fieldName = f.getName();
+				Object value = reqMap.get(fieldName);
+				f.setAccessible(true);
+				f.set(t, value);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return t;
+		}
+		return t;
 	}
 	
 }
