@@ -1,62 +1,346 @@
-[mct][INFO ]2016-06-28 09:46:49,682com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 09:52:43,348com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][ERROR]2016-06-28 09:52:43,797com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=add rollback!
-  [mct][INFO ]2016-06-28 09:52:43,797com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=35 .ms
-  [mct][INFO ]2016-06-28 09:55:17,866com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 09:55:18,432com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 09:55:18,432com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=246 .ms
-  [mct][INFO ]2016-06-28 09:57:59,734com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 09:58:00,286com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 09:58:00,286com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=235 .ms
-  [mct][INFO ]2016-06-28 10:07:21,939com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:07:22,472com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:07:22,472com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=230 .ms
-  [mct][INFO ]2016-06-28 10:11:53,866com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:11:53,896com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:11:53,896com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=30 .ms
-  [mct][INFO ]2016-06-28 10:11:53,941com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:11:53,966com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:11:53,966com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=24 .ms
-  [mct][INFO ]2016-06-28 10:11:54,056com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:11:54,069com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:11:54,070com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=13 .ms
-  [mct][INFO ]2016-06-28 10:11:54,197com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:11:54,215com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:11:54,215com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=18 .ms
-  [mct][INFO ]2016-06-28 10:11:54,315com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:11:54,330com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:11:54,331com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=14 .ms
-  [mct][INFO ]2016-06-28 10:11:54,444com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:11:54,458com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:11:54,458com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=14 .ms
-  [mct][INFO ]2016-06-28 10:11:54,568com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:11:54,589com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:11:54,589com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=21 .ms
-  [mct][INFO ]2016-06-28 10:16:28,054com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:28,054com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:28,467com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:28,664com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:28,689com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:28,725com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:28,749com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:28,760com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=96 .ms
-  [mct][INFO ]2016-06-28 10:16:28,762com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=98 .ms
-  [mct][INFO ]2016-06-28 10:16:28,763com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=99 .ms
-  [mct][INFO ]2016-06-28 10:16:28,774com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:28,775com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:28,779com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=3 .ms
-  [mct][INFO ]2016-06-28 10:16:28,815com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:28,818com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=42 .ms
-  [mct][INFO ]2016-06-28 10:16:55,308com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:55,583com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:55,802com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:55,803com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=219 .ms
-  [mct][INFO ]2016-06-28 10:16:55,809com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:55,812com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=228 .ms
-  [mct][INFO ]2016-06-28 10:16:55,933com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:55,941com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:55,947com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=14 .ms
-  [mct][INFO ]2016-06-28 10:16:56,109com.mct.controller.UserController.registUser(UserController.java:44)/user/reg; params->{id=9, name=10}
-  [mct][INFO ]2016-06-28 10:16:56,114com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
-  [mct][INFO ]2016-06-28 10:16:56,116com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:60)方法 method=add cost=7 .ms
+[mct][INFO ]2016-07-06 10:55:59,014com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9, name=10}
+  [mct][DEBUG]2016-07-06 10:55:59,854com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 10:55:59,901com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:55:59,904com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:55:59,938com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=84 .ms
+  [mct][DEBUG]2016-07-06 10:55:59,941com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=87 .ms
+  [mct][DEBUG]2016-07-06 10:56:00,305org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 10:56:00,370org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), 10(String)
+  [mct][DEBUG]2016-07-06 10:56:00,371org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 10:56:00,380com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 10:56:00,380com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=526 .ms
+  [mct][INFO ]2016-07-06 10:56:00,382com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=528 .ms
+  [mct][INFO ]2016-07-06 10:56:16,717com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9, name=10}
+  [mct][DEBUG]2016-07-06 10:56:16,718com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 10:56:16,718com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:56:16,719com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:56:16,725com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=7 .ms
+  [mct][DEBUG]2016-07-06 10:56:16,725com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=7 .ms
+  [mct][DEBUG]2016-07-06 10:56:16,727org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 10:56:16,729org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), 10(String)
+  [mct][DEBUG]2016-07-06 10:56:16,730org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 10:56:16,732com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 10:56:16,732com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=14 .ms
+  [mct][INFO ]2016-07-06 10:56:16,735com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=17 .ms
+  [mct][INFO ]2016-07-06 10:56:34,467com.mct.controller.UserController.deleteUser(UserController.java:86)/user/delete; params->{id=9, name=10}
+  [mct][DEBUG]2016-07-06 10:56:34,468com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=delete
+  [mct][DEBUG]2016-07-06 10:56:34,470com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:56:34,471com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:56:34,471com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=3 .ms
+  [mct][DEBUG]2016-07-06 10:56:34,472com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=4 .ms
+  [mct][ERROR]2016-07-06 10:56:34,477com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=delete rollback!
+  [mct][DEBUG]2016-07-06 10:56:34,478com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=delete cost=10 .ms
+  [mct][INFO ]2016-07-06 10:56:34,478com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=delete cost=10 .ms
+  [mct][INFO ]2016-07-06 10:57:02,277com.mct.controller.UserController.deleteUser(UserController.java:86)/user/delete; params->{id=9, name=10}
+  [mct][DEBUG]2016-07-06 10:57:02,441com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=delete
+  [mct][DEBUG]2016-07-06 10:57:02,459com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:57:02,461com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:57:02,469com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=29 .ms
+  [mct][DEBUG]2016-07-06 10:57:02,470com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=30 .ms
+  [mct][DEBUG]2016-07-06 10:57:02,637org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: delete from test_user where id = ? 
+  [mct][DEBUG]2016-07-06 10:57:02,651org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][DEBUG]2016-07-06 10:57:02,652org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 79
+  [mct][INFO ]2016-07-06 10:57:02,658com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=delete commited!
+  [mct][DEBUG]2016-07-06 10:57:02,659com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=delete cost=219 .ms
+  [mct][INFO ]2016-07-06 10:57:02,660com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=delete cost=220 .ms
+  [mct][INFO ]2016-07-06 10:57:28,683com.mct.controller.UserController.deleteUser(UserController.java:86)/user/delete; params->{id=9, name=10}
+  [mct][DEBUG]2016-07-06 10:57:28,685com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=delete
+  [mct][DEBUG]2016-07-06 10:57:28,687com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:57:28,688com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:57:28,688com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=3 .ms
+  [mct][DEBUG]2016-07-06 10:57:28,689com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=4 .ms
+  [mct][DEBUG]2016-07-06 10:57:28,694org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: delete from test_user where id = ? 
+  [mct][DEBUG]2016-07-06 10:57:28,694org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][DEBUG]2016-07-06 10:57:28,696org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 0
+  [mct][INFO ]2016-07-06 10:57:28,698com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=delete commited!
+  [mct][DEBUG]2016-07-06 10:57:28,698com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=delete cost=13 .ms
+  [mct][INFO ]2016-07-06 10:57:28,700com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=delete cost=15 .ms
+  [mct][INFO ]2016-07-06 10:57:47,262com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9, name=10}
+  [mct][DEBUG]2016-07-06 10:57:47,265com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 10:57:47,266com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:57:47,267com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:57:47,267com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=4 .ms
+  [mct][DEBUG]2016-07-06 10:57:47,268com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=5 .ms
+  [mct][DEBUG]2016-07-06 10:57:47,269org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 10:57:47,270org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), 10(String)
+  [mct][DEBUG]2016-07-06 10:57:47,272org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 10:57:47,273com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 10:57:47,273com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=10 .ms
+  [mct][INFO ]2016-07-06 10:57:47,275com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=12 .ms
+  [mct][INFO ]2016-07-06 10:58:11,549com.mct.controller.UserController.modifyUser(UserController.java:109)/user/modify; params->{id=9, name=1022}
+  [mct][DEBUG]2016-07-06 10:58:11,550com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=modify
+  [mct][DEBUG]2016-07-06 10:58:11,550com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:58:11,550com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:58:11,551com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 10:58:11,551com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=1 .ms
+  [mct][ERROR]2016-07-06 10:58:11,557com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=modify rollback!
+  [mct][DEBUG]2016-07-06 10:58:11,557com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=modify cost=7 .ms
+  [mct][INFO ]2016-07-06 10:58:11,558com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=modify cost=8 .ms
+  [mct][INFO ]2016-07-06 10:58:28,354com.mct.controller.UserController.modifyUser(UserController.java:109)/user/modify; params->{id=9, name=1022}
+  [mct][DEBUG]2016-07-06 10:58:28,523com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=modify
+  [mct][DEBUG]2016-07-06 10:58:28,551com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:58:28,554com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:58:28,560com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=37 .ms
+  [mct][DEBUG]2016-07-06 10:58:28,562com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=39 .ms
+  [mct][DEBUG]2016-07-06 10:58:28,764org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: update test_user set name = ? 
+  [mct][DEBUG]2016-07-06 10:58:28,779org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 1022(String)
+  [mct][DEBUG]2016-07-06 10:58:28,780org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 2
+  [mct][INFO ]2016-07-06 10:58:28,782com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=modify commited!
+  [mct][DEBUG]2016-07-06 10:58:28,782com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=modify cost=259 .ms
+  [mct][INFO ]2016-07-06 10:58:28,783com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=modify cost=260 .ms
+  [mct][INFO ]2016-07-06 10:59:06,449com.mct.controller.UserController.modifyUser(UserController.java:109)/user/modify; params->{id=9, name=1022}
+  [mct][DEBUG]2016-07-06 10:59:06,614com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=modify
+  [mct][DEBUG]2016-07-06 10:59:06,639com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:59:06,646com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:59:06,652com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=38 .ms
+  [mct][DEBUG]2016-07-06 10:59:06,658com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=44 .ms
+  [mct][DEBUG]2016-07-06 10:59:06,858org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: update test_user set name = ? where id = ? 
+  [mct][DEBUG]2016-07-06 10:59:06,871org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 1022(String), 9(String)
+  [mct][DEBUG]2016-07-06 10:59:06,873org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 10:59:06,875com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=modify commited!
+  [mct][DEBUG]2016-07-06 10:59:06,875com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=modify cost=261 .ms
+  [mct][INFO ]2016-07-06 10:59:06,876com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=modify cost=262 .ms
+  [mct][INFO ]2016-07-06 10:59:58,347com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9, name=1022}
+  [mct][DEBUG]2016-07-06 10:59:58,348com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 10:59:58,348com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 10:59:58,349com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 10:59:58,349com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 10:59:58,350com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=2 .ms
+  [mct][DEBUG]2016-07-06 10:59:58,360org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ?, and name = ? 
+  [mct][DEBUG]2016-07-06 10:59:58,362org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), 1022(String)
+  [mct][ERROR]2016-07-06 10:59:58,405com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 10:59:58,405com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=57 .ms
+  [mct][INFO ]2016-07-06 10:59:58,407com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=59 .ms
+  [mct][INFO ]2016-07-06 11:02:56,234com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9, name=1022}
+  [mct][DEBUG]2016-07-06 11:02:56,236com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:02:56,236com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:02:56,237com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:02:56,237com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:02:56,238com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:02:56,241org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ?, and name = ? 
+  [mct][DEBUG]2016-07-06 11:02:56,242org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), 1022(String)
+  [mct][ERROR]2016-07-06 11:02:56,253com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:02:56,253com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=17 .ms
+  [mct][INFO ]2016-07-06 11:02:56,255com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=19 .ms
+  [mct][INFO ]2016-07-06 11:04:08,099com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9, name=1022}
+  [mct][DEBUG]2016-07-06 11:04:08,246com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:04:08,275com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:04:08,278com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:04:08,285com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=39 .ms
+  [mct][DEBUG]2016-07-06 11:04:08,287com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=41 .ms
+  [mct][DEBUG]2016-07-06 11:04:08,494org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ?, and name = ? 
+  [mct][DEBUG]2016-07-06 11:04:08,508org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), 1022(String)
+  [mct][ERROR]2016-07-06 11:04:08,530com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:04:08,531com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=285 .ms
+  [mct][INFO ]2016-07-06 11:04:08,532com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=286 .ms
+  [mct][INFO ]2016-07-06 11:04:18,159com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:04:18,160com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:04:18,160com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:04:18,161com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:04:18,162com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=3 .ms
+  [mct][DEBUG]2016-07-06 11:04:18,162com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=3 .ms
+  [mct][DEBUG]2016-07-06 11:04:18,167org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ?, 
+  [mct][DEBUG]2016-07-06 11:04:18,168org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][ERROR]2016-07-06 11:04:18,173com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:04:18,174com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=15 .ms
+  [mct][INFO ]2016-07-06 11:04:18,175com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=16 .ms
+  [mct][INFO ]2016-07-06 11:06:32,942com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:06:33,077com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:06:33,103com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:06:33,107com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:06:33,113com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=36 .ms
+  [mct][DEBUG]2016-07-06 11:06:33,114com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=37 .ms
+  [mct][DEBUG]2016-07-06 11:06:33,301org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ?, 
+  [mct][DEBUG]2016-07-06 11:06:33,313org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][ERROR]2016-07-06 11:06:33,326com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:06:33,326com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=249 .ms
+  [mct][INFO ]2016-07-06 11:06:33,327com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=250 .ms
+  [mct][INFO ]2016-07-06 11:06:53,795com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:06:53,796com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:06:53,796com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:06:53,796com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:06:53,796com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=0 .ms
+  [mct][DEBUG]2016-07-06 11:06:53,796com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=0 .ms
+  [mct][DEBUG]2016-07-06 11:06:53,801org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ?, 
+  [mct][DEBUG]2016-07-06 11:06:53,802org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][ERROR]2016-07-06 11:06:53,892com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:06:53,892com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=96 .ms
+  [mct][INFO ]2016-07-06 11:06:53,893com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=97 .ms
+  [mct][INFO ]2016-07-06 11:06:56,264com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:06:56,422com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:06:56,443com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:06:56,446com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:06:56,452com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=30 .ms
+  [mct][DEBUG]2016-07-06 11:06:56,454com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=32 .ms
+  [mct][DEBUG]2016-07-06 11:06:56,648org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ? 
+  [mct][DEBUG]2016-07-06 11:06:56,660org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][ERROR]2016-07-06 11:06:56,683com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:06:56,683com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=261 .ms
+  [mct][INFO ]2016-07-06 11:06:56,684com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=262 .ms
+  [mct][INFO ]2016-07-06 11:07:51,172com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:07:51,321com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:07:51,360com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:07:51,367com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:07:51,372com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=51 .ms
+  [mct][DEBUG]2016-07-06 11:07:51,374com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=53 .ms
+  [mct][DEBUG]2016-07-06 11:07:51,565org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ? 
+  [mct][DEBUG]2016-07-06 11:07:51,578org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][DEBUG]2016-07-06 11:07:51,584org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==      Total: 1
+  [mct][INFO ]2016-07-06 11:07:51,584com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=get commited!
+  [mct][DEBUG]2016-07-06 11:07:51,585com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=264 .ms
+  [mct][INFO ]2016-07-06 11:07:51,587com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=266 .ms
+  [mct][INFO ]2016-07-06 11:08:11,780com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:11,780com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:11,781com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:11,781com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:11,782com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:08:11,782com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:08:11,785org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:11,788org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:11,790org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:11,793com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:11,793com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=13 .ms
+  [mct][INFO ]2016-07-06 11:08:11,795com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=15 .ms
+  [mct][INFO ]2016-07-06 11:08:13,711com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:13,712com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:13,713com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:13,713com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:13,713com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:13,714com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:08:13,717org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:13,719org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:13,720org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:13,723com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:13,723com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=11 .ms
+  [mct][INFO ]2016-07-06 11:08:13,725com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=13 .ms
+  [mct][INFO ]2016-07-06 11:08:13,886com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:13,886com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:13,887com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:13,889com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:13,890com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=4 .ms
+  [mct][DEBUG]2016-07-06 11:08:13,891com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=5 .ms
+  [mct][DEBUG]2016-07-06 11:08:13,892org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:13,894org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:13,895org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:13,904com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:13,905com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=19 .ms
+  [mct][INFO ]2016-07-06 11:08:13,906com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=20 .ms
+  [mct][INFO ]2016-07-06 11:08:14,001com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:14,001com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:14,002com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:14,002com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:14,003com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,007com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=6 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,008org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:14,009org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:14,011org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:14,012com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:14,013com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=12 .ms
+  [mct][INFO ]2016-07-06 11:08:14,014com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=13 .ms
+  [mct][INFO ]2016-07-06 11:08:14,111com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:14,111com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:14,111com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:14,112com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:14,112com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,112com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,117org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:14,118org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:14,120org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:14,122com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:14,123com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=12 .ms
+  [mct][INFO ]2016-07-06 11:08:14,124com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=13 .ms
+  [mct][INFO ]2016-07-06 11:08:14,236com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:14,236com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:14,236com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:14,237com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:14,237com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,237com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,243org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:14,243org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:14,245org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:14,248com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:14,248com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=12 .ms
+  [mct][INFO ]2016-07-06 11:08:14,249com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=13 .ms
+  [mct][INFO ]2016-07-06 11:08:14,367com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:14,367com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:14,367com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:14,368com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:14,368com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,369com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,371org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:14,372org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:14,373org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:14,375com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:14,375com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=8 .ms
+  [mct][INFO ]2016-07-06 11:08:14,376com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=9 .ms
+  [mct][INFO ]2016-07-06 11:08:14,517com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:14,517com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:14,517com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:14,517com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:14,518com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,518com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,521org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:14,522org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:14,524org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:14,526com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:14,526com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=9 .ms
+  [mct][INFO ]2016-07-06 11:08:14,528com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=11 .ms
+  [mct][INFO ]2016-07-06 11:08:14,643com.mct.controller.UserController.registUser(UserController.java:45)/user/reg; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:14,643com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=add
+  [mct][DEBUG]2016-07-06 11:08:14,644com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:14,644com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:14,644com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,645com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:08:14,650org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: insert into test_user (id, name) values( ?,? ) 
+  [mct][DEBUG]2016-07-06 11:08:14,651org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String), null
+  [mct][DEBUG]2016-07-06 11:08:14,653org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==    Updates: 1
+  [mct][INFO ]2016-07-06 11:08:14,655com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=add commited!
+  [mct][DEBUG]2016-07-06 11:08:14,656com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=add cost=13 .ms
+  [mct][INFO ]2016-07-06 11:08:14,658com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=add cost=15 .ms
+  [mct][INFO ]2016-07-06 11:08:19,403com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:08:19,404com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:08:19,404com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:08:19,404com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:08:19,405com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=1 .ms
+  [mct][DEBUG]2016-07-06 11:08:19,406com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=2 .ms
+  [mct][DEBUG]2016-07-06 11:08:19,415org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ? 
+  [mct][DEBUG]2016-07-06 11:08:19,417org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][DEBUG]2016-07-06 11:08:19,426org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==      Total: 10
+  [mct][ERROR]2016-07-06 11:08:19,429com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:08:19,430com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=26 .ms
+  [mct][INFO ]2016-07-06 11:08:19,431com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=27 .ms
+  [mct][INFO ]2016-07-06 11:10:47,284com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:10:47,601com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:10:47,633com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:10:47,648com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:10:47,657com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=56 .ms
+  [mct][DEBUG]2016-07-06 11:10:47,659com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=58 .ms
+  [mct][DEBUG]2016-07-06 11:10:47,884org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ? 
+  [mct][DEBUG]2016-07-06 11:10:47,921org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][ERROR]2016-07-06 11:10:47,958com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:10:47,959com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=358 .ms
+  [mct][INFO ]2016-07-06 11:10:47,960com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=359 .ms
+  [mct][INFO ]2016-07-06 11:13:10,809com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:13:10,991com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:13:11,010com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:13:11,014com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:13:11,020com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=29 .ms
+  [mct][DEBUG]2016-07-06 11:13:11,024com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=33 .ms
+  [mct][DEBUG]2016-07-06 11:13:11,227org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ? 
+  [mct][DEBUG]2016-07-06 11:13:11,240org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][ERROR]2016-07-06 11:13:11,252com.mct.service.base.DBTransactionAdvice.doThrow(DBTransactionAdvice.java:50)methodKey : com.mct.service.UserService@method=get rollback!
+  [mct][DEBUG]2016-07-06 11:13:11,252com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=261 .ms
+  [mct][INFO ]2016-07-06 11:13:11,254com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=263 .ms
+  [mct][INFO ]2016-07-06 11:15:05,656com.mct.controller.UserController.searchUser(UserController.java:65)/user/search; params->{id=9}
+  [mct][DEBUG]2016-07-06 11:15:05,808com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.UserService@method=get
+  [mct][DEBUG]2016-07-06 11:15:05,832com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getMapper
+  [mct][DEBUG]2016-07-06 11:15:05,834com.mct.service.base.DBTransactionAdvice.before(DBTransactionAdvice.java:31)methodKey : com.mct.service.base.BaseService@method=getSqlSession
+  [mct][DEBUG]2016-07-06 11:15:05,840com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getSqlSession cost=32 .ms
+  [mct][DEBUG]2016-07-06 11:15:05,841com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=getMapper cost=33 .ms
+  [mct][DEBUG]2016-07-06 11:15:06,031org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==>  Preparing: select id, name from test_user where 1=1 and id = ? 
+  [mct][DEBUG]2016-07-06 11:15:06,043org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)==> Parameters: 9(String)
+  [mct][DEBUG]2016-07-06 11:15:06,050org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)<==      Total: 10
+  [mct][INFO ]2016-07-06 11:15:06,051com.mct.service.base.DBTransactionAdvice.after(DBTransactionAdvice.java:40)methodKey : com.mct.service.UserService@method=get commited!
+  [mct][DEBUG]2016-07-06 11:15:06,051com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:58)方法 method=get cost=243 .ms
+  [mct][INFO ]2016-07-06 11:15:06,053com.mct.service.base.DBTransactionAdvice.doFinnally(DBTransactionAdvice.java:61)方法 method=get cost=245 .ms
   

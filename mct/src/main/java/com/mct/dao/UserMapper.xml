@@ -12,33 +12,29 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 	
 	
-	<delete id="delete" parameterType="UserInfoModel">
+	<delete id="del" parameterType="UserInfoModel">
 		delete from test_user where id = #{id}
 	</delete>
 	
 	
-	<update id="modify" parameterType="UserInfoModel">
+	<update id="update" parameterType="UserInfoModel">
 		update test_user set		
-		
-		<trim>
 			<if test="name != null">
 				name = #{name}
 			</if>
-		</trim>
+		where id = #{id}
 	</update>
 	
 	
-	<select id="get" parameterType="UserInfoModel">
+	<select id="get" parameterType="UserInfoModel" resultType="UserInfoModel">
 		select id, name from test_user where 1=1
 		
-		<trim>
 			<if test="id!= null">
-				and id = #{id},
+				and id = #{id}
 			</if>
 			<if test="name != null">
 				and name = #{name}
 			</if>
-		</trim>
 	</select>
 	
 </mapper>

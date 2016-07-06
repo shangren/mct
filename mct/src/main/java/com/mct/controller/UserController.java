@@ -1,12 +1,12 @@
 package com.mct.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -64,13 +64,13 @@ public class UserController extends BaseController{
 		Map<String, Object> reqMap = this.bindParam2Map(request);
 		logger.info("/user/search; params->" + reqMap);
 		UserInfoModel userInfoModel = this.popModelWithMap(reqMap, UserInfoModel.class);
-		UserInfoModel model = null;
+		List<UserInfoModel> list = null;
 		try{
-			 model = userService.get(userInfoModel);
+			 list = userService.get(userInfoModel);
 		}catch(Exception e){
 			return this.getErrorView();
 		}
-		return this.getSuccView("data", model);
+		return this.getSuccView("data", list );
 	}
 	
 	

@@ -1,5 +1,7 @@
 package com.mct.service;
 
+import java.util.List;
+
 import com.mct.dao.UserMapper;
 import com.mct.model.UserInfoModel;
 import com.mct.service.base.BaseService;
@@ -29,7 +31,7 @@ public class UserService extends BaseService{
 	 * @param userInfoModel
 	 * @return
 	 */
-	public UserInfoModel get(UserInfoModel userInfoModel) {
+	public List<UserInfoModel> get(UserInfoModel userInfoModel) {
 		return this.getMapper(UserMapper.class, false).get(userInfoModel);
 	}
 	
@@ -53,5 +55,7 @@ public class UserService extends BaseService{
 	}
 	
 	
-	
+	public void paginationSearch(UserInfoModel userInfoModel){
+		this.getMapper(UserMapper.class,false).get(userInfoModel);
+	}
 }
